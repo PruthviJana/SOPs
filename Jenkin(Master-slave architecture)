@@ -22,12 +22,12 @@ To set up a Master-Slave architecture in Jenkins, follow the steps below:
 
   //giving root previliges to jenkins)
       --  visudo
-             there edit the 2nd root line,, jenkins all=(all) NOPASSWD:   wq! back to console
+             yypp there edit the 2nd root line,, jenkins all=(all) NOPASSWD:ALL   wq! back to console
 
   //Connecting shell to console
       *sshid server 
 
-      --  vim /etc/ssh/sshd_config
+      --  vim /etc/ssh/sshd_config   ,insert i
 
              there in password ,make it as yes ... wq! back to consle
 
@@ -45,10 +45,10 @@ editing part
 
 Master instance 
 
---  su -jenkins   switching to jenkins
+--  su - jenkins   switching to jenkins
 
-ssh -keygen    press enter
-ssh -copy-id @localhost
+ssh-keygen    press enter
+ssh-copy-id jenkins@localhost
 enter master password  
 
 displays command link ,copy that link and paste then its gets connected to local host 
