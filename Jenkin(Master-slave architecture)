@@ -9,7 +9,7 @@ To set up a Master-Slave architecture in Jenkins, follow the steps below:
 2. Launch other 2 instances(slave 1 ,slave 2)
 
    // install java in slave1 and slave2 // 
-      --  amazon-linux-extras install java-openjdk11 -y)
+      --  amazon-linux-extras install java-openjdk11 -y
 
   ##need to connect Master and slaves
 
