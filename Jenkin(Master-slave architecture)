@@ -30,9 +30,14 @@ To set up a Master-Slave architecture in Jenkins, follow the steps below:
       --  vim /etc/ssh/sshd_config   ,insert i
 
              there in password ,make it as yes ... wq! back to consle
+             
 
       -- systemctl restart sshd
       --systemctl status sshd
+
+need to set password for master 
+
+*passwd jenkins    (give passwd)
 
 //now in slave 1 and slave 2,type 
 
